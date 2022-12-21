@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:whgt@900&display=swap');
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgb(209, 199, 199);
+
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('https://images.unsplash.com/photo-1626065659388-0603c209f0c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url('https://images.unsplash.com/photo-1666053582202-25115d97c97b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url('https://images.unsplash.com/photo-1601153107254-8a9446b53a02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url('https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #e6d7d7;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #182838;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: rgb(189, 184, 184);
+    padding: 20px;
+    color: rgb(0, 255, 136);
+    text-shadow: 0 0 15px rgb(255, 0, 234), 0 0 25px rgb(255, 0, 255);
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+footer {
+    font-size: large;
+    width: 100%;
+    background-color: #111010;
+    color: #f1b9b9;
+    height: 8vh;
+    text-align: center;
+    padding: 1px;
+}
+
+@media(max-width:568px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        background-attachment: scroll;
+    }
+}
